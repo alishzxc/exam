@@ -1,0 +1,198 @@
+@import "../base/vars.scss";
+.header__main{
+    width: 1920px;
+    height: 898px;
+    flex-shrink: 0;
+    background-image: url(../images/background/header__main/first__back__ground.svg);
+    margin: auto;
+    
+}
+.header__mainfirst{
+    background-image: url(../images/background/header__main/background__two.svg);
+    width: 1920;
+    height: 898px;
+    margin: auto;
+    
+}
+.header__main__one {
+    display: flex;
+    width: 530px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    height: 303px;
+    margin-left: 227px;
+}
+.header__main__text {
+    color: $bt__color;
+    font-family: $bt__text;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 247px;
+
+}
+.header__main__h2 {
+    color: $title__color;
+    font-family: $title__text;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 530px;
+}
+.header__main__button {
+
+    display: flex;
+}
+.header__main_button {
+    width: 220px;
+    height: 79px;
+    box-shadow: #EFD372 4px 4px 0px;
+    display: flex;
+    padding: 28px 39px;
+    outline: none;
+    transition: transform 200ms, box-shadow 200ms;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    border-radius: 16px;
+    background: #EFD372;
+    border: none;
+    display: flex
+    
+}
+.header__main_button:hover{
+    transform: translateX(4px) translate(4px);
+    outline: none;
+}
+.header__main__p{
+    color: $title__color;
+    font-family: $title__text;
+    font-size: 20px;
+    width: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+@media (max-width:414px){
+    .header__main {
+        width: 390px;
+        height: auto;
+        flex-shrink: 0;
+        background-image: url(../images/background/header__main/first__back__ground.svg);
+        margin: 40px auto;
+        padding: 10px;
+      }
+      
+      .header__mainfirst {
+        background-image: url(../images/background/header__main/background__two.svg);
+        width: 390px;
+        height: auto;
+        margin: auto;
+      }
+      
+      .header__main__one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 390px;
+      }
+      
+      .header__main__text {
+        color: $bt__color;
+        font-family: $bt__text;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      .header__main__h2 {
+        color: $title__color;
+        font-family: $title__text;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .header__main__button {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .header__main_button {
+        width: 220px;
+        height: 79px;
+        box-shadow: #EFD372 4px 4px 0px;
+        display: flex;
+        padding: 20px;
+        outline: none;
+        transition: transform 200ms, box-shadow 200ms;
+        cursor: pointer;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+        border-radius: 16px;
+        background: #EFD372;
+        border: none;
+      }
+      
+      .header__main_button:active {
+        transform: translateX(4px) translateY(4px);
+        outline: none;
+      }
+      
+      .header__main__p {
+        color: $title__color;
+        font-family: $title__text;
+        font-size: 16px;
+        width: 120px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+      }
+      
+      /* Media query for mobile devices */
+      @media (max-width: 414px) {
+        .header__main__one {
+          width: 270px;
+          margin: auto;
+          margin-left: 35px;
+          align-items: center;
+          gap:30px ;
+        }
+      
+        .header__main__h2 {
+          font-size: 36px;
+        }
+      
+        .header__main__text {
+          font-size: 18px;
+        }
+      
+        .header__main_button {
+          width: 180px;
+          height: 60px;
+          padding: 15px;
+        }
+      
+        .header__main__p {
+          font-size: 14px;
+          width: auto;
+        }
+      }
+      
+}
+

@@ -1,0 +1,186 @@
+@import "../base/vars.scss";
+.main__panel {
+    width: 1920px;
+    height: 600px;
+    margin: auto;
+}
+.main__panel__first {
+    width: 1440px;
+    height: 600px;
+    display: flex;
+    margin: auto;
+    // margin-top: 154px;
+    gap: 30px ;
+    margin: 154px auto;
+}
+.main__panel__one{
+    width: 682px;
+    height: 367px;
+    background-image: url(../images/main__panel/main__panel__first.svg);
+}
+.main__panel__two{
+    width: 682px;
+    height: 367px;
+    background-image: url(../images/main__panel/main__panel__two.svg);
+}
+.panel__text1 {
+    color: #FFF;
+    font-family: $bt__text;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 131px;
+    height: 49px;
+}
+.panel__text2 {
+    width: 277.633px;
+    color: #FFF;
+    font-family: $title__text;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.panel{
+    display: flex;
+    width: 277.633px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 118px;
+    margin-left: 80px;
+}
+.panel2{
+    display: flex;
+    width: 277.633px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 118px;
+    margin-left: 80px;
+}
+.panel__text3{
+    width: 104.381px;
+    color: $bt__color;
+    font-family: $bt__text;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.panel__text4{
+    width: 277.633px;
+    color: #274C5B;
+    font-family: $title__text;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+@media (max-width:414px){
+    .main__panel {
+        width: 390px;;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+      }
+      
+      .main__panel__first {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px; /* Adjust the margin for mobile */
+        gap: 30px;
+      }
+      
+      .main__panel__one{
+        background-image: url(/images/media__adaptation/first.jpg);
+        width: 400px;
+        height: 360px;
+      }
+      
+      .main__panel__two {
+        width: 100%;
+        height: 367px; /* Adjust the height for mobile */
+        background-size: cover;
+        background-image: url(/images/media__adaptation/two.jpg);
+      }
+      
+      .panel__text1 {
+        color: #FFF;
+        font-family: $bt__text;
+        font-size: 24px; /* Adjust the font size for mobile */
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: auto; /* Remove fixed width */
+        height: auto; /* Remove fixed height */
+        text-align: center; /* Align the text to center */
+      }
+      
+      .panel__text2 {
+        width: 100%;
+        color: #FFF;
+        font-family: $title__text;
+        font-size: 36px; /* Adjust the font size for mobile */
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: center; /* Align the text to center */
+      }
+      
+      .panel,
+      .panel2 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center; /* Align items to center */
+        gap: 5px;
+        margin-top: 50px; /* Adjust the margin for mobile */
+        margin-left: 0; /* Remove left margin */
+      }
+      
+      .panel__text3,
+      .panel__text4 {
+        width: 100%;
+        color: $bt__color;
+        font-family: $bt__text;
+        font-size: 24px; /* Adjust the font size for mobile */
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center; /* Align the text to center */
+      }
+      
+      /* Media query for mobile devices */
+      @media (max-width: 414px) {
+        .main__panel__first {
+          gap: 10px; /* Adjust the gap for smaller screens */
+          margin-top: 50px; /* Adjust the margin for smaller screens */
+        }
+      
+        .panel__text1{
+          margin-top: 136px;
+        }
+        .panel__text2{
+          margin-top: 0px;
+        }
+        .panel__text3{
+          margin-top: 136px;
+        }
+        .panel__text4 {
+          font-size: 18px; /* Adjust the font size for smaller screens */
+        }
+      
+        .panel{
+          margin-top: 40px;
+        }
+        .panel2 {
+         margin-top: 0px;
+        }
+      }
+      
+}
